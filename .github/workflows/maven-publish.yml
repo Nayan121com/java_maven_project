@@ -33,7 +33,7 @@ jobs:
         GITHUB_TOKEN: ${{ github.token }}
         
     - name: Build Docker image
-      run: docker build -t nkmg123/github-actions-docker-java-app:0.0.1.Release .
+      run: docker build -t nkmg123/github-actions-docker-java-app:0.0.1.Release
 
  
 
@@ -44,4 +44,4 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Push Docker Image
-      run: docker push nkmg123/github-actions-docker-java-app:0.0.2.Release .
+      run: docker push nkmg123/github-actions-docker-java-app:0.0.2.Release
